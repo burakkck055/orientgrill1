@@ -60,18 +60,7 @@ export default function Hero() {
           transition={{ delay: 0.2, duration: 0.7, ease: EASE }}
           style={{ display: "flex", justifyContent: "center", marginBottom: "20px" }}
         >
-          <svg width="88" height="88" viewBox="0 0 80 80" aria-label="Orient Grill Logo">
-            <path
-              d="M40 5 L45.5 17 L58 12 L53.5 24.5 L66 30 L53.5 35.5 L58 48 L45.5 43.5 L40 55 L34.5 43.5 L22 48 L26.5 35.5 L14 30 L26.5 24.5 L22 12 L34.5 17 Z"
-              fill="#B71C1C"
-            />
-            <path
-              d="M40 18 L43 26 L51.5 23 L46.5 30 L51.5 37 L43 34 L40 42 L37 34 L28.5 37 L33.5 30 L28.5 23 L37 26 Z"
-              fill="white"
-              opacity="0.93"
-            />
-            <circle cx="40" cy="30" r="3" fill="#B71C1C" />
-          </svg>
+          <Image src="/Images/Wappen.png" alt="Orient Grill Wappen" width={88} height={88} style={{ objectFit: "contain" }} priority />
         </motion.div>
 
         {/* Main headline */}

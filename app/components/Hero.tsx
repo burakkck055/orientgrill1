@@ -22,7 +22,7 @@ export default function Hero() {
       {/* ── Background image ── */}
       <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
         <Image
-          src="/Images/Logo.png"
+          src="./Images/Logo.png"
           alt="Orientalischer Hintergrund"
           fill
           priority

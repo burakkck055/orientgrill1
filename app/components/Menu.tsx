@@ -217,10 +217,40 @@ export default function Menu() {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
           transition={{ delay: 0.1, duration: 0.7, ease: EASE }}
           className="font-cinzel"
-          style={{ fontSize: "clamp(26px, 5vw, 48px)", fontWeight: 900, textAlign: "center", color: "#8B0000", marginBottom: "40px" }}
+          style={{ fontSize: "clamp(26px, 5vw, 48px)", fontWeight: 900, textAlign: "center", color: "#8B0000", marginBottom: "20px" }}
         >
           Vollständige <span style={{ color: "#B71C1C" }}>Speisekarte</span>
         </motion.h2>
+
+        {/* PDF download button */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+          transition={{ delay: 0.18, duration: 0.55, ease: EASE }}
+          style={{ display: "flex", justifyContent: "center", marginBottom: "36px" }}
+        >
+          <a
+            href="/speisekarte.pdf"
+            download="Speisekarte Orient Grill.pdf"
+            className="font-inter"
+            style={{
+              display: "inline-flex", alignItems: "center", gap: "8px",
+              padding: "11px 22px", borderRadius: "9px",
+              background: "white", color: "#B71C1C",
+              border: "1.5px solid rgba(183,28,28,0.28)",
+              textDecoration: "none", fontSize: "13px", fontWeight: 600,
+              boxShadow: "0 2px 12px rgba(183,28,28,0.09)",
+              transition: "background 0.2s ease, box-shadow 0.2s ease",
+            }}
+            onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "#FFF2F2"; (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 18px rgba(183,28,28,0.16)"; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "white"; (e.currentTarget as HTMLElement).style.boxShadow = "0 2px 12px rgba(183,28,28,0.09)"; }}
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B71C1C" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Speisekarte als PDF herunterladen
+          </a>
+        </motion.div>
 
         {/* Sticky search bar */}
         <div style={{

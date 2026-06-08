@@ -81,6 +81,30 @@ export default function Navigation() {
                 {link.label}
               </a>
             ))}
+            {/* PDF download */}
+            <a
+              href="/speisekarte.pdf"
+              download="Speisekarte Orient Grill.pdf"
+              className="font-inter"
+              style={{
+                display: "inline-flex", alignItems: "center", gap: "6px",
+                padding: "9px 16px", borderRadius: "8px",
+                background: "white", color: "#B71C1C",
+                border: "1.5px solid rgba(183,28,28,0.28)",
+                textDecoration: "none", fontSize: "13px", fontWeight: 600,
+                boxShadow: "0 2px 8px rgba(183,28,28,0.08)",
+                transition: "background 0.2s ease, box-shadow 0.2s ease",
+              }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "#FFF2F2"; (e.currentTarget as HTMLElement).style.boxShadow = "0 3px 14px rgba(183,28,28,0.14)"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "white"; (e.currentTarget as HTMLElement).style.boxShadow = "0 2px 8px rgba(183,28,28,0.08)"; }}
+            >
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#B71C1C" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Speisekarte PDF
+            </a>
+
+            {/* Call CTA */}
             <a
               href="tel:022619877118"
               className="font-inter"
@@ -155,12 +179,31 @@ export default function Navigation() {
               </motion.a>
             ))}
             <motion.a
-              href="tel:022619877118"
+              href="/speisekarte.pdf"
+              download="Speisekarte Orient Grill.pdf"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: navLinks.length * 0.06 }}
               style={{
                 marginTop: "16px", padding: "13px 30px", borderRadius: "8px",
+                background: "white", color: "#B71C1C",
+                border: "1.5px solid rgba(183,28,28,0.28)",
+                textDecoration: "none", fontSize: "14px", fontWeight: 600,
+                display: "flex", alignItems: "center", gap: "8px",
+              }}
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B71C1C" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Speisekarte PDF herunterladen
+            </motion.a>
+            <motion.a
+              href="tel:022619877118"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: (navLinks.length + 1) * 0.06 }}
+              style={{
+                marginTop: "8px", padding: "13px 30px", borderRadius: "8px",
                 background: "linear-gradient(135deg, #B71C1C 0%, #8B0000 100%)",
                 border: "1px solid rgba(183,28,28,0.30)",
                 color: "#fff", textDecoration: "none", fontSize: "15px", fontWeight: 600,

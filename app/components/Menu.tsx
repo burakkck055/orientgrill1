@@ -259,9 +259,9 @@ export default function Menu() {
             onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "white"; (e.currentTarget as HTMLElement).style.boxShadow = "0 2px 12px rgba(183,28,28,0.09)"; }}
           >
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B71C1C" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/>
             </svg>
-            Speisekarte als PDF herunterladen
+            Speisekarte öffnen
           </a>
         </motion.div>
 

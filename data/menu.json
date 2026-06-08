@@ -1,0 +1,285 @@
+{
+  "restaurantName": "Orient Grill Bergneustadt",
+  "categories": [
+    {
+      "id": "salate",
+      "name": "Salate",
+      "emoji": "🥗",
+      "description": "Frische Salate täglich zubereitet",
+      "items": [
+        { "id": "02", "name": "Salat Mista", "description": "", "prices": [{"label": "Klein", "value": "6,50 €"}, {"label": "Groß", "value": "7,50 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "02A", "name": "Salat Bergneustadt", "description": "", "prices": [{"label": "Klein", "value": "9,00 €"}, {"label": "Groß", "value": "10,50 €"}], "additives": [], "isBestSeller": true, "isNew": false, "image": null },
+        { "id": "03", "name": "Salat Orient", "description": "Mit Oliven, Peperoni", "prices": [{"label": "Klein", "value": "7,50 €"}, {"label": "Groß", "value": "8,50 €"}], "additives": ["1", "3"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "04", "name": "Kraut Salat", "description": "Mit Oliven, Peperoni", "prices": [{"label": "Klein", "value": "7,00 €"}, {"label": "Groß", "value": "8,00 €"}], "additives": ["1", "3"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "05", "name": "Salat Mozzarella", "description": "", "prices": [{"label": "Klein", "value": "7,50 €"}, {"label": "Groß", "value": "8,50 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "06", "name": "Salat Maxi", "description": "Mit Oliven, Peperoni", "prices": [{"label": "Klein", "value": "8,50 €"}, {"label": "Groß", "value": "9,50 €"}], "additives": ["1", "3"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "07", "name": "Salat Tonno", "description": "Mit Thunfisch", "prices": [{"label": "Klein", "value": "9,00 €"}, {"label": "Groß", "value": "10,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "08", "name": "Hähnchensalat", "description": "Mit gegrillter Hähnchenbrust", "prices": [{"label": "Klein", "value": "8,00 €"}, {"label": "Groß", "value": "10,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "09", "name": "Drehspießfleisch Salat", "description": "Mit Drehspießfleisch", "prices": [{"label": "Klein", "value": "8,00 €"}, {"label": "Groß", "value": "10,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "10", "name": "Salat Capriciosa", "description": "Mit Gouda, Putenformvorderschinken", "prices": [{"label": "Klein", "value": "9,00 €"}, {"label": "Groß", "value": "11,00 €"}], "additives": ["1", "4", "2", "3"], "isBestSeller": false, "isNew": false, "image": null }
+      ]
+    },
+    {
+      "id": "vorspeisen",
+      "name": "Vorspeisen",
+      "emoji": "🫓",
+      "description": "Knusprige Vorspeisen und Appetizer",
+      "items": [
+        { "id": "vs-01", "name": "Pizza Brötchen mit Kräuterbutter", "description": "", "prices": [{"label": "", "value": "3,00 €"}], "additives": ["0"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "vs-02", "name": "Pizza Brötchen mit Käse überbacken und Kräuterbutter", "description": "", "prices": [{"label": "", "value": "4,00 €"}], "additives": ["1", "0"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "vs-03", "name": "Tomaten Mozzarella", "description": "Mit frischem Basilikum und Balsamico", "prices": [{"label": "", "value": "6,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "vs-04", "name": "Zigaretten-Börek mit Tzatziki", "description": "Weichkäse, frische Petersilie, frittiert", "prices": [{"label": "", "value": "7,00 €"}], "additives": ["5"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "vs-05", "name": "Tzatziki Cocktail", "description": "", "prices": [{"label": "", "value": "2,50 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "vs-06", "name": "Türkische Baklava", "description": "", "prices": [{"label": "", "value": "1,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "vs-07", "name": "Gefüllte Pizza Brötchen", "description": "+1 Belag + Gouda Käse", "prices": [{"label": "", "value": "10,00 €"}], "additives": ["0"], "isBestSeller": false, "isNew": false, "image": null }
+      ]
+    },
+    {
+      "id": "fisch",
+      "name": "Fisch",
+      "emoji": "🐟",
+      "description": "Fischgerichte frisch zubereitet",
+      "items": [
+        { "id": "fi-01", "name": "Fischstäbchen Teller", "description": "", "prices": [{"label": "", "value": "12,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "fi-02", "name": "Fischstäbchen Brötchen mit Ketchup", "description": "", "prices": [{"label": "", "value": "7,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null }
+      ]
+    },
+    {
+      "id": "drehspiess",
+      "name": "Drehspieß",
+      "emoji": "🥙",
+      "description": "Klassischer Döner vom Drehspieß",
+      "items": [
+        { "id": "11", "name": "Drehspießfleisch Box mit Sauce", "description": "PommBox", "prices": [{"label": "", "value": "7,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "12", "name": "Drehspießfleisch-Tasche mit Salat und Sauce", "description": "", "prices": [{"label": "", "value": "8,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "13", "name": "Drehspießfleisch Rolle mit Salat und Sauce", "description": "", "prices": [{"label": "", "value": "9,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "14", "name": "Drehspießfleisch Teller mit Pommes oder Reis und Sauce", "description": "", "prices": [{"label": "", "value": "11,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "15", "name": "Drehspießfleisch Teller mit Salat und Sauce", "description": "", "prices": [{"label": "", "value": "11,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "16", "name": "Drehspießfleisch Teller komplett", "description": "Mit Pommes oder Reis, Salat und Sauce", "prices": [{"label": "", "value": "11,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": true, "isNew": false, "image": null },
+        { "id": "17", "name": "Portion Drehspießfleisch nur Fleisch", "description": "", "prices": [{"label": "Klein", "value": "10,00 €"}, {"label": "Groß", "value": "12,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "19A", "name": "Falafel Teller", "description": "Mit Pommes oder Reis, Salat und Sauce", "prices": [{"label": "", "value": "10,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "20", "name": "Drehspießfleisch Spezial I", "description": "Mit Sahnesauce, Käse überbacken", "prices": [{"label": "", "value": "12,00 €"}], "additives": ["5", "0", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "20A", "name": "Drehspießfleisch mit Sauce Hollandaise", "description": "Käse überbacken", "prices": [{"label": "", "value": "12,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "21", "name": "Drehspießfleisch Spezial 2", "description": "Mit Knoblauch, Tomatensauce, Käse überbacken", "prices": [{"label": "", "value": "12,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "21A", "name": "Drehspießfleisch mit Barbecue Sauce", "description": "Käse überbacken", "prices": [{"label": "", "value": "12,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "22", "name": "Drehspießfleisch Spezial 3", "description": "Mit Tomatensahnesauce, Zwiebeln, Pilzen, Käse überbacken", "prices": [{"label": "", "value": "12,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "22A", "name": "Drehspießfleisch Spezial 4", "description": "Mit frischen Tomaten, Peperoni und Goudakäse überbacken", "prices": [{"label": "", "value": "12,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null }
+      ]
+    },
+    {
+      "id": "tuerkische-pizza",
+      "name": "Türkische Pizza",
+      "emoji": "🫓",
+      "description": "Lahmacun – dünn & knusprig",
+      "items": [
+        { "id": "23", "name": "Türkische Pizza mit gewürztem Hackfleisch", "description": "", "prices": [{"label": "", "value": "3,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "24", "name": "Türkische Pizza mit Salat und Sauce", "description": "", "prices": [{"label": "", "value": "6,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "25", "name": "Türkische Pizza mit Drehspießfleisch und Sauce", "description": "", "prices": [{"label": "", "value": "8,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "26", "name": "Türkische Pizza mit Drehspießfleisch, Salat und Sauce", "description": "", "prices": [{"label": "", "value": "9,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "27", "name": "Türkische Pizza mit Drehspießfleisch, Weichkäse, Peperoni, Salat und Sauce", "description": "", "prices": [{"label": "", "value": "10,00 €"}], "additives": ["5", "9", "4", "8", "3"], "isBestSeller": false, "isNew": false, "image": null }
+      ]
+    },
+    {
+      "id": "spezial-pizza",
+      "name": "Spezial Pizza",
+      "emoji": "⭐",
+      "description": "Hausgemachte Spezialkreationen",
+      "items": [
+        { "id": "S1", "name": "BBO Western", "description": "Barbecuesauce, Drehspießfleisch, Peperoni", "prices": [{"label": "Klein", "value": "10,00 €"}, {"label": "Groß", "value": "15,00 €"}], "additives": ["5", "9", "4", "8", "3"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "S2", "name": "Mexico", "description": "Barbecuesauce, Paprika, Zwiebeln, Hähnchenbrust, Mais", "prices": [{"label": "Klein", "value": "10,00 €"}, {"label": "Groß", "value": "15,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "S3", "name": "Drehspießfleisch Spezial", "description": "Drehspießfleisch, Zwiebeln, Oliven, BBQ Sauce oder Hollandaise", "prices": [{"label": "Klein", "value": "10,00 €"}, {"label": "Groß", "value": "15,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null }
+      ]
+    },
+    {
+      "id": "steinofen-pizza",
+      "name": "Steinofen Pizza",
+      "emoji": "🍕",
+      "description": "Knuspriger Steinofenboden, täglich frisch",
+      "items": [
+        { "id": "28", "name": "Margherita", "description": "Mit Tomatensauce und Käse", "prices": [{"label": "Klein", "value": "7,50 €"}, {"label": "Groß", "value": "9,00 €"}], "additives": ["1"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "29", "name": "Peperoni", "description": "", "prices": [{"label": "Klein", "value": "8,50 €"}, {"label": "Groß", "value": "10,00 €"}], "additives": ["3"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "29A", "name": "Ruccola", "description": "Mit frischen Tomaten + 1 Belag nach Wunsch", "prices": [{"label": "Groß", "value": "14,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "29B", "name": "Catja", "description": "Mit Ruccola, Putenformvorderschinken, Parmesankäse", "prices": [{"label": "Groß", "value": "14,00 €"}], "additives": ["4", "2", "9", "1"], "isBestSeller": true, "isNew": false, "image": null },
+        { "id": "30A", "name": "Pizza Bombe", "description": "Doppelter Teig, türk. Sucuk, Champignons, Zwiebeln, Paprika, Drehspießfleisch, Peperoni", "prices": [{"label": "Groß", "value": "15,00 €"}], "additives": ["5", "9", "4", "8", "3"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "31", "name": "Funghi", "description": "Mit Champignons", "prices": [{"label": "Klein", "value": "8,50 €"}, {"label": "Groß", "value": "11,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "32", "name": "Lachspizza", "description": "Mit Spinat, Lachs, Knoblauch", "prices": [{"label": "Klein", "value": "10,00 €"}, {"label": "Groß", "value": "14,00 €"}], "additives": [], "isBestSeller": false, "isNew": true, "image": null },
+        { "id": "32A", "name": "Mozzarella", "description": "Mit frischen Tomaten, frischem Basilikum, Oliven", "prices": [{"label": "Klein", "value": "10,00 €"}, {"label": "Groß", "value": "14,00 €"}], "additives": ["7"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "33", "name": "Mais", "description": "", "prices": [{"label": "Klein", "value": "8,00 €"}, {"label": "Groß", "value": "11,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "33A", "name": "Frutti de Mare", "description": "Mit Meeresfrüchten und Knoblauch", "prices": [{"label": "Klein", "value": "10,00 €"}, {"label": "Groß", "value": "13,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "34", "name": "Brokkoli", "description": "", "prices": [{"label": "Klein", "value": "8,50 €"}, {"label": "Groß", "value": "10,50 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "34A", "name": "Artischocke", "description": "Mit Artischocke, Brokkoli und Champignons", "prices": [{"label": "Klein", "value": "10,00 €"}, {"label": "Groß", "value": "12,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "35", "name": "Chicken Nuggets Pizza", "description": "Mit Käserand, Hollandaise", "prices": [{"label": "Groß", "value": "14,00 €"}], "additives": ["0"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "35B", "name": "Popeye", "description": "Mit Spinat, Spiegeleier, Weichkäse, Knoblauch", "prices": [{"label": "Klein", "value": "10,50 €"}, {"label": "Groß", "value": "14,00 €"}], "additives": ["0"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "36", "name": "Spinaci", "description": "Mit Spinat, Knoblauch", "prices": [{"label": "Klein", "value": "9,00 €"}, {"label": "Groß", "value": "12,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "38", "name": "Tonno", "description": "Mit Thunfisch", "prices": [{"label": "Klein", "value": "9,00 €"}, {"label": "Groß", "value": "12,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "38A", "name": "Schahin", "description": "Mit Hähnchenbrust, Brokkoli, Mais, Sauce Hollandaise", "prices": [{"label": "Klein", "value": "10,00 €"}, {"label": "Groß", "value": "13,00 €"}], "additives": [], "isBestSeller": true, "isNew": false, "image": null },
+        { "id": "38B", "name": "Shirin", "description": "Mit Salami, Drehspießfleisch, Peperoni", "prices": [{"label": "Klein", "value": "10,00 €"}, {"label": "Groß", "value": "12,00 €"}], "additives": ["5", "9", "4", "8", "3"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "39", "name": "Drehspießfleisch Pizza", "description": "", "prices": [{"label": "Klein", "value": "8,00 €"}, {"label": "Groß", "value": "10,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "39A", "name": "Quattro Formaggi", "description": "Mit Gorgonzola, Weichkäse, Mozzarella, Gouda", "prices": [{"label": "Klein", "value": "9,00 €"}, {"label": "Groß", "value": "11,00 €"}], "additives": ["0"], "isBestSeller": true, "isNew": false, "image": null },
+        { "id": "39B", "name": "Canno", "description": "Mit Drehspießfleisch, Hollandaise", "prices": [{"label": "Klein", "value": "9,00 €"}, {"label": "Groß", "value": "12,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "40", "name": "Sucuk Pizza", "description": "Mit Knoblauchwurst", "prices": [{"label": "Klein", "value": "8,50 €"}, {"label": "Groß", "value": "10,50 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "40A", "name": "Amore in Herzform", "description": "Mit 3 Belägen nach Wunsch", "prices": [{"label": "Groß", "value": "12,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "41", "name": "Salami", "description": "", "prices": [{"label": "Klein", "value": "8,00 €"}, {"label": "Groß", "value": "10,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "41A", "name": "Calzone", "description": "Zugeklappt, mit Champignons, Putenformvorderschinken, Thunfisch, frische Paprika, Zwiebeln, Artischocken", "prices": [{"label": "Groß", "value": "11,00 €"}], "additives": ["4", "2", "3"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "42", "name": "Schinken", "description": "Mit Putenformvorderschinken", "prices": [{"label": "Klein", "value": "8,00 €"}, {"label": "Groß", "value": "10,00 €"}], "additives": ["4", "2", "3"], "isBestSeller": false, "isNew": false, "image": null }
+      ]
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "emoji": "🍕",
+      "description": "Klassische und kreative Pizzavarianten",
+      "items": [
+        { "id": "42A", "name": "Amerikano", "description": "Thunfisch, Putenformvorderschinken, Champignons, Zwiebeln, Ei", "prices": [{"label": "Klein", "value": "9,50 €"}, {"label": "Groß", "value": "11,50 €"}], "additives": ["4", "2", "3"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "43", "name": "Hawaii", "description": "Ananas, Putenformvorderschinken", "prices": [{"label": "Klein", "value": "9,50 €"}, {"label": "Groß", "value": "11,00 €"}], "additives": ["4", "2", "3"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "43A", "name": "4 Jahreszeiten", "description": "Putenformvorderschinken, Champignons, Thunfisch, Artischocken", "prices": [{"label": "Klein", "value": "9,50 €"}, {"label": "Groß", "value": "13,00 €"}], "additives": ["4", "2", "3"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "44", "name": "Scampi", "description": "Krabben, Knoblauch", "prices": [{"label": "Klein", "value": "9,50 €"}, {"label": "Groß", "value": "13,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "45", "name": "Boss", "description": "Thunfisch, Weichkäse", "prices": [{"label": "Klein", "value": "9,50 €"}, {"label": "Groß", "value": "12,50 €"}], "additives": ["0"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "45A", "name": "Toskana", "description": "Thunfisch, Putenformvorderschinken", "prices": [{"label": "Klein", "value": "9,50 €"}, {"label": "Groß", "value": "13,00 €"}], "additives": ["4", "2", "3"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "45B", "name": "Nudelpizza", "description": "Hollandaise, Drehspießfleisch, Nudeln", "prices": [{"label": "Klein", "value": "10,00 €"}, {"label": "Groß", "value": "13,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "46", "name": "Diavolo", "description": "Thunfisch, Zwiebeln, Paprika, Knoblauch", "prices": [{"label": "Klein", "value": "9,50 €"}, {"label": "Groß", "value": "13,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "47", "name": "Welt", "description": "Thunfisch, Champignons, Paprika", "prices": [{"label": "Klein", "value": "9,50 €"}, {"label": "Groß", "value": "13,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "48", "name": "Sido", "description": "Thunfisch, Zwiebeln, Champignons, Peperoni", "prices": [{"label": "Klein", "value": "9,50 €"}, {"label": "Groß", "value": "13,00 €"}], "additives": ["3"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "49", "name": "Orient", "description": "Drehspießfleisch, Zwiebeln, Champignons, Peperoni, Weichkäse, Knoblauch", "prices": [{"label": "Klein", "value": "10,00 €"}, {"label": "Groß", "value": "14,00 €"}], "additives": ["5", "9", "4", "8", "3", "0"], "isBestSeller": true, "isNew": false, "image": null },
+        { "id": "50", "name": "Mexx", "description": "Drehspießfleisch, Zwiebeln, Weichkäse", "prices": [{"label": "Klein", "value": "9,50 €"}, {"label": "Groß", "value": "13,00 €"}], "additives": ["5", "9", "4", "8", "0"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "50A", "name": "Osmanische Pizza", "description": "Hackfleischsauce, Sucuk, Weichkäse, scharf", "prices": [{"label": "Klein", "value": "10,00 €"}, {"label": "Groß", "value": "13,00 €"}], "additives": ["0"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "51", "name": "Tolik", "description": "Drehspießfleisch, Zwiebeln, Oliven", "prices": [{"label": "Klein", "value": "9,50 €"}, {"label": "Groß", "value": "12,00 €"}], "additives": ["5", "9", "4", "8", "1"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "52", "name": "Jäger", "description": "Knoblauchwurst, Peperoni, Zwiebeln", "prices": [{"label": "Klein", "value": "9,50 €"}, {"label": "Groß", "value": "13,00 €"}], "additives": ["3"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "53", "name": "Quattro", "description": "Knoblauchwurst, Champignons, Brokkoli, Zwiebeln", "prices": [{"label": "Klein", "value": "9,50 €"}, {"label": "Groß", "value": "13,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "54", "name": "Flamingo", "description": "Salami, Champignons, Zwiebeln, Mais", "prices": [{"label": "Klein", "value": "9,00 €"}, {"label": "Groß", "value": "13,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "55", "name": "Welat", "description": "Salami, Thunfisch, Champignons, Paprika", "prices": [{"label": "Klein", "value": "9,50 €"}, {"label": "Groß", "value": "13,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "56", "name": "Chicken", "description": "Hähnchenbrust, Paprika, Zwiebeln, Champignons", "prices": [{"label": "Klein", "value": "9,50 €"}, {"label": "Groß", "value": "13,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "57", "name": "Istanbul", "description": "Thunfisch, Knoblauchwurst, Weichkäse, Champignons, Zwiebeln, Peperoni", "prices": [{"label": "Klein", "value": "10,00 €"}, {"label": "Groß", "value": "14,00 €"}], "additives": ["3", "0"], "isBestSeller": true, "isNew": false, "image": null },
+        { "id": "58", "name": "Vegetaria", "description": "Champignons, Zwiebeln, Paprika, Peperoni, Mais", "prices": [{"label": "Klein", "value": "9,00 €"}, {"label": "Groß", "value": "12,00 €"}], "additives": ["3"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "familien", "name": "Familien Pizza 40×60 cm", "description": "Käse, Tomatensauce, Oregano; jede weitere Zutat +5,00€", "prices": [{"label": "Groß", "value": "20,00 €"}], "additives": ["0"], "isBestSeller": false, "isNew": false, "image": null }
+      ]
+    },
+    {
+      "id": "pide",
+      "name": "Pide",
+      "emoji": "🛶",
+      "description": "Türkisches Fladenbrot, frisch gebacken",
+      "items": [
+        { "id": "99", "name": "Pide Spinat", "description": "Weichkäse, Gouda", "prices": [{"label": "", "value": "9,00 €"}], "additives": ["0", "9"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "100", "name": "Pide Spinat mit Ei", "description": "Ei, Gouda", "prices": [{"label": "", "value": "9,00 €"}], "additives": ["0", "1"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "101", "name": "Pide Weichkäse mit Ei", "description": "Weichkäse, Ei, Gouda", "prices": [{"label": "", "value": "9,00 €"}], "additives": ["0", "9"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "102", "name": "Pide Rinderhackfleisch mit Ei", "description": "", "prices": [{"label": "", "value": "9,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null }
+      ]
+    },
+    {
+      "id": "nudelgerichte",
+      "name": "Nudelgerichte",
+      "emoji": "🍝",
+      "description": "Hausgemachte Pasta in cremigen Saucen",
+      "items": [
+        { "id": "60", "name": "Napoli", "description": "Mit Tomatensauce", "prices": [{"label": "", "value": "9,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "60A", "name": "Curry", "description": "Mit Sahnesauce, Curry, Brokkoli, Hähnchenbrust", "prices": [{"label": "", "value": "12,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "60B", "name": "Carbonara", "description": "Mit Sahnesauce, Putenformvorderschinken, Ei", "prices": [{"label": "", "value": "12,00 €"}], "additives": ["1", "4", "2", "3"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "62", "name": "K-Wurst", "description": "Mit Tomatensahnesauce, Knoblauchwurst", "prices": [{"label": "", "value": "11,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "63", "name": "Tonno", "description": "Mit Tomatensahnesauce, Thunfisch", "prices": [{"label": "", "value": "12,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "64", "name": "Drehspießfleisch Pasta", "description": "Mit Tomatensahnesauce, Drehspießfleisch", "prices": [{"label": "", "value": "12,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "65", "name": "Chicken Pasta", "description": "Mit Tomatensahnesauce, Hähnchenbrust", "prices": [{"label": "", "value": "12,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "66", "name": "Arabia", "description": "Mit Tomatensahnesauce, Drehspießfleisch, Pilze, Zwiebeln, Knoblauch", "prices": [{"label": "", "value": "12,00 €"}], "additives": ["5", "9", "4", "8"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "67", "name": "Orient Pasta", "description": "Mit Tomatensahnesauce, Hähnchenbrust, Pilze, Zwiebeln, Knoblauch", "prices": [{"label": "", "value": "12,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "67A", "name": "Lasagne", "description": "Tomaten- und Bechamelsauce, Rinderhackfleisch, Goudakäse", "prices": [{"label": "", "value": "12,00 €"}], "additives": ["1"], "isBestSeller": false, "isNew": false, "image": null }
+      ]
+    },
+    {
+      "id": "schnitzel",
+      "name": "Schnitzel",
+      "emoji": "🥩",
+      "description": "Saftige Schnitzelgerichte mit Beilage",
+      "items": [
+        { "id": "68", "name": "Schnitzel \"Wiener Art\"", "description": "", "prices": [{"label": "", "value": "10,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "68A", "name": "Rahmschnitzel", "description": "Mit Rahmsauce", "prices": [{"label": "", "value": "12,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "68B", "name": "Paprikarahmschnitzel", "description": "Mit Rahmsauce, frischer Paprika", "prices": [{"label": "", "value": "12,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "69", "name": "Jägerschnitzel", "description": "", "prices": [{"label": "", "value": "11,00 €"}], "additives": ["3"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "69A", "name": "Pfefferschnitzel", "description": "Mit Pfefferrahmsauce", "prices": [{"label": "", "value": "12,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "70", "name": "Zigeunerschnitzel", "description": "", "prices": [{"label": "", "value": "12,00 €"}], "additives": ["3", "6"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "71A", "name": "Schnitzel Spezial", "description": "Mit Spargel, Brokkoli, Sauce Hollandaise und Käse überbacken", "prices": [{"label": "", "value": "12,00 €"}], "additives": ["1"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "73", "name": "Boss Schnitzel", "description": "Mit Tomatensahnesauce, Pilze, Zwiebeln, Käse überbacken", "prices": [{"label": "", "value": "12,00 €"}], "additives": ["1"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "74", "name": "Schnitzel Amsterdam", "description": "Mit Sauce Hollandaise", "prices": [{"label": "", "value": "12,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "75", "name": "Hawaii-Schnitzel", "description": "Mit Putenformvorderschinken, Ananas, Sahnesauce, Käse überbacken", "prices": [{"label": "", "value": "12,00 €"}], "additives": ["1", "4", "2", "3"], "isBestSeller": false, "isNew": false, "image": null }
+      ]
+    },
+    {
+      "id": "grillgerichte",
+      "name": "Grillgerichte",
+      "emoji": "🔥",
+      "description": "Vom Holzkohlegrill, frisch und saftig",
+      "items": [
+        { "id": "adana-duerum", "name": "Adana Dürüm", "description": "", "prices": [{"label": "", "value": "10,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "adana-teller", "name": "Adana Teller", "description": "Zwei Spieße mit Pommes oder Reis und Salat", "prices": [{"label": "", "value": "15,00 €"}], "additives": [], "isBestSeller": true, "isNew": false, "image": null },
+        { "id": "haenchen-duerum", "name": "Hänchenspieß Dürüm", "description": "", "prices": [{"label": "", "value": "9,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "haenchen-teller", "name": "Hänchenspieß Teller", "description": "Zwei Spieße mit Pommes oder Reis und Salat", "prices": [{"label": "", "value": "12,00 €"}], "additives": [], "isBestSeller": true, "isNew": false, "image": null },
+        { "id": "koefte-tasche", "name": "Köfte Tasche", "description": "", "prices": [{"label": "", "value": "9,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "koefte-teller", "name": "Köfte Teller", "description": "", "prices": [{"label": "", "value": "13,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null }
+      ]
+    },
+    {
+      "id": "imbissgerichte",
+      "name": "Imbissgerichte",
+      "emoji": "🍟",
+      "description": "Schnelle Snacks und Beilagen",
+      "items": [
+        { "id": "78", "name": "Currywurst", "description": "", "prices": [{"label": "", "value": "3,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "79", "name": "Currywurst u. Pommes", "description": "", "prices": [{"label": "", "value": "6,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "82", "name": "Chicken Nuggets 7er mit Sauce", "description": "", "prices": [{"label": "", "value": "3,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "83", "name": "Chicken Nuggets 7er mit Pommes und Sauce", "description": "", "prices": [{"label": "", "value": "6,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "87", "name": "Pommes klein", "description": "", "prices": [{"label": "", "value": "2,50 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "88", "name": "Pommes groß", "description": "", "prices": [{"label": "", "value": "3,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "89", "name": "Ketchup / Mayonaise", "description": "", "prices": [{"label": "", "value": "0,50 €"}], "additives": ["3", "6"], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "90", "name": "Mozzarella-Sticks 6 Stk.", "description": "", "prices": [{"label": "", "value": "6,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null }
+      ]
+    },
+    {
+      "id": "burger",
+      "name": "Burger",
+      "emoji": "🍔",
+      "description": "Saftige Burger mit 180g Patty",
+      "items": [
+        { "id": "burger-cheese", "name": "Cheeseburger", "description": "180g Patty", "prices": [{"label": "", "value": "7,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "burger-pastirma", "name": "Pastirmaburger", "description": "180g Patty", "prices": [{"label": "", "value": "8,00 €"}], "additives": [], "isBestSeller": true, "isNew": false, "image": null },
+        { "id": "burger-ei", "name": "Eiburger", "description": "180g Patty mit Ei", "prices": [{"label": "", "value": "8,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "burger-crispy", "name": "Crispy Chickenburger", "description": "Knuspriges Hähnchen", "prices": [{"label": "", "value": "6,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null }
+      ]
+    },
+    {
+      "id": "getraenke",
+      "name": "Getränke",
+      "emoji": "🥤",
+      "description": "Erfrischende Getränke",
+      "items": [
+        { "id": "cola-033", "name": "Coca Cola / Fanta / Sprite / Uludag", "description": "0,33L, inkl. Pfand", "prices": [{"label": "", "value": "2,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "cola-025", "name": "Coca Cola 0,25L", "description": "", "prices": [{"label": "", "value": "1,50 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "cola-1l", "name": "Coca Cola 1L", "description": "Inkl. Pfand", "prices": [{"label": "", "value": "3,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "ayran", "name": "Ayran", "description": "Ayran – Energy", "prices": [{"label": "", "value": "2,50 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null }
+      ]
+    },
+    {
+      "id": "menues",
+      "name": "Menüs",
+      "emoji": "🍽️",
+      "description": "Nur vor Ort erhältlich",
+      "items": [
+        { "id": "menu-1", "name": "Menü 1", "description": "Dönertasche + Kleine Pommes + Soft Getränk", "prices": [{"label": "", "value": "10,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "menu-2", "name": "Menü 2", "description": "Alle Schnitzel + Kleine Pommes + Soft Getränk", "prices": [{"label": "", "value": "12,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "menu-3", "name": "Menü 3", "description": "Alle Nudeln + Soft Getränk", "prices": [{"label": "", "value": "12,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null },
+        { "id": "menu-4", "name": "Menü 4", "description": "Drehspießteller + Soft Getränk", "prices": [{"label": "", "value": "12,00 €"}], "additives": [], "isBestSeller": false, "isNew": false, "image": null }
+      ]
+    }
+  ],
+  "bestSellers": ["38A", "49", "57", "39A", "29B", "16", "02A", "adana-teller", "haenchen-teller", "burger-pastirma"],
+  "additiveLegend": {
+    "0": "Laktose",
+    "1": "Farbstoff",
+    "2": "Antioxidationsmittel",
+    "3": "Konservierungsstoff",
+    "4": "Geschmacksverstärker",
+    "5": "Phosphat",
+    "6": "Süßungsmittel",
+    "7": "Farbstabilisator",
+    "8": "Emulgator",
+    "9": "Milcheiweiß"
+  }
+}

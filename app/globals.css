@@ -1,26 +1,104 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: #FFFFFF;
+  --color-surface: #FFF8F8;
+  --color-red: #B71C1C;
+  --color-red-dark: #8B0000;
+  --font-cinzel: var(--font-cinzel-var);
+  --font-playfair: var(--font-playfair-var);
+  --font-inter: var(--font-inter-var);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #FFFFFF;
+  color: #1A1A1A;
+  font-family: var(--font-inter-var), 'Inter', sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 72px;
 }
+
+.font-cinzel   { font-family: var(--font-cinzel-var),  'Cinzel', serif; }
+.font-playfair { font-family: var(--font-playfair-var), 'Playfair Display', serif; }
+.font-inter    { font-family: var(--font-inter-var),    'Inter', sans-serif; }
+
+/* ── Glass (light) ─────────────────────────── */
+.glass-light {
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(183,28,28,0.15);
+  box-shadow: 0 4px 24px rgba(183,28,28,0.08), 0 1px 4px rgba(0,0,0,0.04), inset 0 1px 0 #fff;
+}
+.glass-light-elevated {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  border: 1px solid rgba(183,28,28,0.20);
+  box-shadow: 0 8px 40px rgba(183,28,28,0.10), 0 2px 8px rgba(0,0,0,0.04), inset 0 1px 0 #fff;
+}
+.glass-nav {
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(28px) saturate(200%);
+  -webkit-backdrop-filter: blur(28px) saturate(200%);
+  border-bottom: 1px solid rgba(183,28,28,0.14);
+  box-shadow: 0 2px 20px rgba(183,28,28,0.08);
+}
+
+/* ── Text gradient ─────────────────────────── */
+.text-red-gradient {
+  background: linear-gradient(135deg, #B71C1C 0%, #C62828 50%, #8B0000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Oriental tile pattern (red on white) ──── */
+.oriental-pattern-light {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23B71C1C' stroke-width='0.7'%3E%3Cpath d='M60 15 L65 30 L78 25 L72 38 L85 42 L72 46 L78 59 L65 54 L60 68 L55 54 L42 59 L48 46 L35 42 L48 38 L42 25 L55 30 Z'/%3E%3Cpath d='M60 28 L63 38 L73 35 L68 44 L77 50 L68 56 L73 65 L63 62 L60 72 L57 62 L47 65 L52 56 L43 50 L52 44 L47 35 L57 38 Z' stroke-width='0.35'/%3E%3Ccircle cx='60' cy='50' r='22' stroke-width='0.35' stroke-dasharray='3,6'/%3E%3Ccircle cx='60' cy='50' r='34' stroke-width='0.25' stroke-dasharray='2,8'/%3E%3Cpath d='M60 0 L60 15 M120 60 L105 60 M60 120 L60 105 M0 60 L15 60' stroke-width='0.4'/%3E%3Cpath d='M18 18 L28 28 M102 18 L92 28 M102 102 L92 92 M18 102 L28 92' stroke-width='0.35'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 120px 120px;
+}
+
+/* ── Keyframes ─────────────────────────────── */
+@keyframes float-orb {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-20px); }
+}
+@keyframes spin-slow {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes smoke-rise {
+  0%   { transform: translateY(0)    scaleX(1);   opacity: 0.4; }
+  50%  { transform: translateY(-40px) scaleX(1.4); opacity: 0.2; }
+  100% { transform: translateY(-80px) scaleX(2);   opacity: 0; }
+}
+@keyframes pulse-red {
+  0%, 100% { box-shadow: 0 0 8px rgba(183,28,28,0.5), 0 0 16px rgba(183,28,28,0.25); opacity: 1; }
+  50%       { box-shadow: 0 0 20px rgba(183,28,28,0.7), 0 0 40px rgba(183,28,28,0.35); opacity: 0.75; }
+}
+@keyframes ring-pulse {
+  0%   { transform: scale(1);   opacity: 0.7; }
+  70%  { transform: scale(2.2); opacity: 0; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+@keyframes marquee-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes shimmer-red {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+/* ── Scrollbar ─────────────────────────────── */
+::-webkit-scrollbar         { width: 6px; height: 6px; }
+::-webkit-scrollbar-track   { background: #FFF8F8; }
+::-webkit-scrollbar-thumb   { background: rgba(183,28,28,0.22); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(183,28,28,0.40); }
+
+::selection { background: rgba(183,28,28,0.14); color: #8B0000; }

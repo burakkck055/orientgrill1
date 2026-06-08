@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import menuData from "../../data/menu.json";
 
 const openingHours = [
@@ -11,11 +12,7 @@ const openingHours = [
 function FooterLogo() {
   return (
     <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-      <svg width="34" height="34" viewBox="0 0 80 80" aria-hidden>
-        <path d="M40 5 L45.5 17 L58 12 L53.5 24.5 L66 30 L53.5 35.5 L58 48 L45.5 43.5 L40 55 L34.5 43.5 L22 48 L26.5 35.5 L14 30 L26.5 24.5 L22 12 L34.5 17 Z" fill="#B71C1C" />
-        <path d="M40 18 L43 26 L51.5 23 L46.5 30 L51.5 37 L43 34 L40 42 L37 34 L28.5 37 L33.5 30 L28.5 23 L37 26 Z" fill="white" opacity="0.93" />
-        <circle cx="40" cy="30" r="3" fill="#B71C1C" />
-      </svg>
+      <Image src="/Images/Wappen.png" alt="Orient Grill Wappen" width={34} height={34} style={{ objectFit: "contain" }} />
       <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.1 }}>
         <span className="font-cinzel" style={{ color: "#8B0000", fontSize: "18px", fontWeight: 700, letterSpacing: "0.05em" }}>ORIENT GRILL</span>
         <span className="font-cinzel" style={{ fontSize: "8px", color: "rgba(139,0,0,0.45)", letterSpacing: "0.28em", textTransform: "uppercase" as const }}>BERGNEUSTADT</span>

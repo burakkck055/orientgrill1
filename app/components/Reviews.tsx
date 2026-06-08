@@ -50,7 +50,7 @@ export default function Reviews() {
   ];
 
   return (
-    <section id="bewertungen" style={{ background: "#FFFFFF", padding: "80px 24px 100px", position: "relative", overflow: "hidden" }}>
+    <section id="bewertungen" className="sec-pad" style={{ background: "#FFFFFF" }}>
       {/* Background image strip (top/bottom corners) for ambiance */}
       <div style={{ position: "absolute", inset: 0, pointerEvents: "none", opacity: 0.03 }}>
         <div className="oriental-pattern-light" style={{ position: "absolute", inset: 0 }} />

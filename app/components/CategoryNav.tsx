@@ -39,7 +39,12 @@ function CategoryCard({ category, index }: { category: (typeof menuData.categori
         ref={tilt.ref}
         onMouseMove={tilt.onMove}
         onMouseLeave={tilt.onLeave}
-        onClick={() => document.getElementById(category.id)?.scrollIntoView({ behavior: "smooth", block: "start" })}
+        onClick={() => {
+          window.dispatchEvent(new CustomEvent("open-category", { detail: category.id }));
+          setTimeout(() => {
+            document.getElementById(category.id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+          }, 80);
+        }}
         whileHover={{ y: -5, boxShadow: "0 10px 36px rgba(183,28,28,0.18), 0 3px 10px rgba(183,28,28,0.10), inset 0 1px 0 #fff" }}
         transition={{ type: "spring", stiffness: 280, damping: 24 }}
         style={{
@@ -82,13 +87,11 @@ export default function CategoryNav() {
   return (
     <section
       ref={sectionRef}
+      className="sec-pad"
       style={{
-        padding: "80px 24px",
         background: "#FFF8F8",
         borderTop: "1px solid rgba(183,28,28,0.10)",
         borderBottom: "1px solid rgba(183,28,28,0.08)",
-        position: "relative",
-        overflow: "hidden",
       }}
     >
       {/* Subtle background image tint */}

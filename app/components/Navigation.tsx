@@ -150,18 +150,13 @@ export default function Navigation() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.25 }}
-            style={{
-              position: "fixed", inset: 0, zIndex: 40,
-              background: "rgba(255,255,255,0.97)",
-              backdropFilter: "blur(24px)", WebkitBackdropFilter: "blur(24px)",
-              display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "8px",
-            }}
+            className="nav-overlay"
+            initial={{ opacity: 0, y: -12 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -12 }}
+            transition={{ duration: 0.22 }}
           >
-            <div style={{ marginBottom: "24px" }}><NavLogo /></div>
+            <div style={{ marginBottom: "20px" }}><NavLogo /></div>
             {navLinks.map((link, i) => (
               <motion.a
                 key={link.href}

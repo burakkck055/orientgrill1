@@ -19,14 +19,26 @@ export default function Hero() {
         overflow: "hidden",
       }}
     >
-      {/* ── Background image ── */}
-      <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
+      {/* ── Background image — desktop ── */}
+      <div className="hidden sm:block" style={{ position: "absolute", inset: 0, zIndex: 0 }}>
         <Image
-          src="./Images/Logo.png"
+          src="/Images/Logo.png"
           alt="Orientalischer Hintergrund"
           fill
           priority
           style={{ objectFit: "cover", objectPosition: "center" }}
+          quality={95}
+        />
+      </div>
+
+      {/* ── Background image — mobile ── */}
+      <div className="sm:hidden" style={{ position: "absolute", inset: 0, zIndex: 0 }}>
+        <Image
+          src="/Images/Logo_Handy.png"
+          alt="Orientalischer Hintergrund"
+          fill
+          priority
+          style={{ objectFit: "cover", objectPosition: "center top" }}
           quality={95}
         />
       </div>
@@ -40,16 +52,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div
-        style={{
-          position: "relative",
-          zIndex: 10,
-          textAlign: "center",
-          padding: "160px 24px 120px",
-          maxWidth: "820px",
-          width: "100%",
-        }}
-      >
+      <div className="hero-pad">
         {/* Logo emblem */}
         <motion.div
           initial={{ opacity: 0, scale: 0.78 }}
@@ -160,53 +163,77 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.0, duration: 0.8, ease: EASE }}
-          style={{
-            display: "flex", gap: "14px",
-            justifyContent: "center", flexWrap: "wrap",
-            marginTop: "38px",
-          }}
+          style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "12px", marginTop: "36px", width: "100%" }}
         >
-          <motion.a
-            href="#speisekarte"
-            onClick={(e) => { e.preventDefault(); document.getElementById("speisekarte")?.scrollIntoView({ behavior: "smooth" }); }}
-            whileTap={{ y: 1, filter: "brightness(0.94)" }}
-            style={{
-              display: "inline-flex", alignItems: "center", gap: "8px",
-              padding: "14px 28px", borderRadius: "10px",
-              background: "linear-gradient(135deg, #B71C1C 0%, #8B0000 100%)",
-              border: "1px solid rgba(183,28,28,0.30)",
-              color: "#fff", textDecoration: "none",
-              fontSize: "15px", fontWeight: 600, letterSpacing: "0.02em",
-              boxShadow: "0 4px 20px rgba(183,28,28,0.40), inset 0 1px 0 rgba(255,255,255,0.15)",
-              transition: "box-shadow 0.22s ease, filter 0.22s ease",
-            }}
-            onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.filter = "brightness(1.08)"; }}
-            onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.filter = "brightness(1)"; }}
-          >
-            Speisekarte entdecken
-          </motion.a>
+          {/* Row 1: Speisekarte + Anrufen */}
+          <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap", width: "100%" }}>
+            <motion.a
+              href="#speisekarte"
+              onClick={(e) => { e.preventDefault(); document.getElementById("speisekarte")?.scrollIntoView({ behavior: "smooth" }); }}
+              whileTap={{ y: 1, filter: "brightness(0.94)" }}
+              style={{
+                display: "inline-flex", alignItems: "center", gap: "8px",
+                padding: "13px 24px", borderRadius: "10px",
+                background: "linear-gradient(135deg, #B71C1C 0%, #8B0000 100%)",
+                border: "1px solid rgba(183,28,28,0.30)",
+                color: "#fff", textDecoration: "none",
+                fontSize: "15px", fontWeight: 600, letterSpacing: "0.02em",
+                boxShadow: "0 4px 20px rgba(183,28,28,0.40), inset 0 1px 0 rgba(255,255,255,0.15)",
+                transition: "box-shadow 0.22s ease, filter 0.22s ease",
+              }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.filter = "brightness(1.08)"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.filter = "brightness(1)"; }}
+            >
+              Speisekarte entdecken
+            </motion.a>
 
+            <motion.a
+              href="tel:022619877118"
+              whileTap={{ y: 1 }}
+              style={{
+                display: "inline-flex", alignItems: "center", gap: "8px",
+                padding: "13px 24px", borderRadius: "10px",
+                background: "rgba(255,255,255,0.88)",
+                backdropFilter: "blur(12px)",
+                border: "1.5px solid rgba(183,28,28,0.30)",
+                color: "#B71C1C", textDecoration: "none",
+                fontSize: "15px", fontWeight: 600, letterSpacing: "0.02em",
+                boxShadow: "0 2px 12px rgba(183,28,28,0.12)",
+                transition: "background 0.22s ease",
+              }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.98)"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.88)"; }}
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B71C1C" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.64a16 16 0 006.29 6.29l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+              02261 9877118
+            </motion.a>
+          </div>
+
+          {/* Row 2: PDF Download */}
           <motion.a
-            href="tel:022619877118"
+            href="/speisekarte.pdf"
+            download="Speisekarte Orient Grill.pdf"
             whileTap={{ y: 1 }}
             style={{
-              display: "inline-flex", alignItems: "center", gap: "8px",
-              padding: "14px 28px", borderRadius: "10px",
-              background: "rgba(255,255,255,0.88)",
+              display: "inline-flex", alignItems: "center", gap: "7px",
+              padding: "10px 20px", borderRadius: "8px",
+              background: "rgba(255,255,255,0.72)",
               backdropFilter: "blur(12px)",
-              border: "1.5px solid rgba(183,28,28,0.30)",
-              color: "#B71C1C", textDecoration: "none",
-              fontSize: "15px", fontWeight: 600, letterSpacing: "0.02em",
-              boxShadow: "0 2px 12px rgba(183,28,28,0.12)",
-              transition: "background 0.22s ease, box-shadow 0.22s ease",
+              border: "1.5px solid rgba(183,28,28,0.22)",
+              color: "#8B0000", textDecoration: "none",
+              fontSize: "13px", fontWeight: 600,
+              boxShadow: "0 2px 10px rgba(183,28,28,0.10)",
+              transition: "background 0.22s ease",
             }}
-            onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.98)"; }}
-            onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.88)"; }}
+            onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.95)"; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.72)"; }}
           >
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B71C1C" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.64a16 16 0 006.29 6.29l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8B0000" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
             </svg>
-            02261 9877118
+            Speisekarte als PDF herunterladen
           </motion.a>
         </motion.div>
       </div>

@@ -143,7 +143,7 @@ export default function BestSellers() {
   }
 
   return (
-    <section id="best-seller" ref={sectionRef} style={{ padding: "80px 24px", background: "#FFFFFF", position: "relative", overflow: "hidden" }}>
+    <section id="best-seller" ref={sectionRef} className="sec-pad" style={{ background: "#FFFFFF" }}>
       <div className="oriental-pattern-light" style={{ position: "absolute", inset: 0, opacity: 0.025, pointerEvents: "none" }} />
 
       <div style={{ maxWidth: "1280px", margin: "0 auto", position: "relative" }}>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import menuData from "../../data/menu.json";
 
@@ -175,6 +175,19 @@ export default function Menu() {
   const sectionRef = useRef(null);
   const inView = useInView(sectionRef, { once: true, margin: "-80px" });
 
+  useEffect(() => {
+    const handler = (e: Event) => {
+      const id = (e as CustomEvent<string>).detail;
+      setOpenCategories((prev) => {
+        const next = new Set(prev);
+        next.add(id);
+        return next;
+      });
+    };
+    window.addEventListener("open-category", handler);
+    return () => window.removeEventListener("open-category", handler);
+  }, []);
+
   const toggleCategory = useCallback((id: string) => {
     setOpenCategories((prev) => {
       const next = new Set(prev);
@@ -198,7 +211,7 @@ export default function Menu() {
     : [];
 
   return (
-    <section id="speisekarte" ref={sectionRef} style={{ padding: "80px 24px", background: "#FFF8F8", position: "relative" }}>
+    <section id="speisekarte" ref={sectionRef} className="sec-pad" style={{ background: "#FFF8F8" }}>
       <div className="oriental-pattern-light" style={{ position: "absolute", inset: 0, opacity: 0.025, pointerEvents: "none" }} />
 
       <div style={{ maxWidth: "1024px", margin: "0 auto", position: "relative" }}>

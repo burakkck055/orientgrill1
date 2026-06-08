@@ -62,7 +62,7 @@ export default function Footer() {
       {/* Top divider */}
       <div style={{ height: "2px", background: "linear-gradient(90deg, transparent 0%, rgba(183,28,28,0.40) 30%, rgba(183,28,28,0.65) 50%, rgba(183,28,28,0.40) 70%, transparent 100%)" }} />
 
-      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "64px 24px 48px", position: "relative" }}>
+      <div className="footer-inner">
         <div style={{ display: "grid", gridTemplateColumns: "repeat(1, 1fr)", gap: "40px" }} className="sm:grid-cols-2 lg:grid-cols-4">
 
           {/* Col 1: Logo + tagline */}

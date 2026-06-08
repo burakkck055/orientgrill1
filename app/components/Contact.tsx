@@ -39,7 +39,7 @@ export default function Contact() {
   const todayLabel = getTodayLabel();
 
   return (
-    <section id="kontakt" style={{ background: "#FFF8F8", padding: "80px 24px 100px", position: "relative", overflow: "hidden" }}>
+    <section id="kontakt" className="sec-pad" style={{ background: "#FFF8F8" }}>
       <div className="oriental-pattern-light" style={{ position: "absolute", inset: 0, opacity: 0.03, pointerEvents: "none" }} />
 
       <div style={{ maxWidth: "1100px", margin: "0 auto", position: "relative" }}>
